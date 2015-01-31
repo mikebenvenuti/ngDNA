@@ -1,0 +1,11 @@
+[
+{"WSID": "1", "LabCase": "15-0001", "ItemNumber": "1", "Description": "Shirt"},
+{"WSID": "1", "LabCase": "15-0001", "ItemNumber": "2", "Description": "Pants"},
+{"WSID": "1", "LabCase": "15-0001", "ItemNumber": "3", "Description": "Hat"},
+{"WSID": "1", "LabCase": "15-0001", "ItemNumber": "4", "Description": "Knife"} ,
+{"WSID": "1", "LabCase": "15-0001", "ItemNumber": "5", "Description": "Gun"},
+{"WSID": "2", "LabCase": "15-0002", "ItemNumber": "1", "Description": "Swab"},
+{"WSID": "2", "LabCase": "15-0002", "ItemNumber": "2", "Description": "Buccal"},
+{"WSID": "3", "LabCase": "15-0003", "ItemNumber": "1", "Description": "Shoe"},
+{"WSID": "3", "LabCase": "15-0003", "ItemNumber": "2", "Description": "Bullet"}
+]

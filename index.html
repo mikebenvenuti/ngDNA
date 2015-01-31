@@ -1,0 +1,12 @@
+<div>
+
+    <div class="h4"> Case Number         Item Number          Description      </div>
+    <div class="list-group-item nav-divider" ng-repeat="item in items | filter: { WSID: ThisWorksheetID} ">
+        {{item.LabCase}}     {{item.ItemNumber}}      {{item.Description}}
+    </div>
+
+    <button ng-click="FindMyWS()">Search</button>
+</div>
+
+
+

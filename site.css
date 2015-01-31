@@ -1,0 +1,18 @@
+.redit {
+    background-color: red;
+}
+
+.mpanel {
+    position: relative;
+    padding : 5px;
+    border: solid black 2px;
+    background-color: #adadad;
+    height: 120px;
+    color : #204d74;
+
+
+}
+
+.label {
+    color: #000000;
+}

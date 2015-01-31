@@ -1,0 +1,22 @@
+{
+  "name": "ngDNA",
+  "version": "0.0.0",
+  "authors": [
+    "mikebenvenuti <benvenuti@sbcglobal.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.3.10",
+    "bootstrap": "~3.3.2",
+    "toastr": "~2.1.0",
+    "ui-router": "~0.2.13",
+    "underscore": "~1.7.0"
+  }
+}

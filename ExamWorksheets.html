@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/ui-router/release/angular-ui-router.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="site.css"/>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="DNA">
+
+<div ng-controller="mainCtrl as vm">
+    <h1>     </h1>
+     <div  class="list-group-item"  ng-repeat="hdr in vm.headers">
+       {{hdr.Date}}  {{hdr.Analyst}} <a ng_href="#/main/{{hdr.WSID}}">{{hdr.Worksheet}} </a>
+    </div>
+</div>
+<div ui-view>  </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/underscore/underscore.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="site.css"/>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script type="text/javascript">
+    (function() {
+        this. assertit  = function assertit(desc) {
+            var hdr = document.createElement("h3");
+            hdr.appendChild(document.createTextNode(desc));
+            document.getElementById('mike').appendChild(hdr);
+
+            return hdr;
+
+
+        }
+    })();
+
+    window.onload = function ( ) {
+       // assertit('Load');
+    }
+</script>
+<body ng-app="DNA" >
+
+
+<div class="mpanel"> <h2>Mike's DNA Worksheets </h2>
+
+    <button value="OK"  name="tei" onclick="assertit('mike')"></button>
+    <div id="mike"></div>
+</div>
+
+
+<div ui-view> </div>
+
+</body>
+</html>

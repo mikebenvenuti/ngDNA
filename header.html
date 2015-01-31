@@ -1,0 +1,9 @@
+<div class="mpanel">
+
+<div ng-controller="hdrCtrl as vm">
+    <h1> {{vm.name}}    </h1>
+      <h3> <div  ng-repeat="hdr in vm.headers| filter: { WSID : '1'} ">
+          <span class="label">Analyst: </span> {{hdr.Analyst}}
+      </div></h3>
+</div>
+</div>
