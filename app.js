@@ -24,6 +24,7 @@ function wsCtrl($scope,$http,$stateParams) {
 
     function onUserComplete(response) {
         $scope.items = response.data;
+        $scope.getDesc =$scope.mgetDesc($scope.items);
     };
 
     function onError(reason) {
@@ -32,13 +33,44 @@ function wsCtrl($scope,$http,$stateParams) {
 
     findvalue = function(value) {
         return  value.ItemNumber === '2';
-    }
+    };
 
     $scope.FindMyWS = function FindMyWS() {
-
         console.log(_.find($scope.items,findvalue).Description  );
-        console.log('FindMyWS');
-    }
+    };
+
+    $scope.WhereWS = function WhereWS() {
+        console.log(_.where($scope.items,{"LabCase": "15-0001"}) );
+    };
+
+    function makeAdder(value) {
+        return function(free) {
+            return free + value;
+        };
+    };
+
+    $scope.add10 =  makeAdder(10);
+    $scope.add123 =  $scope.add10(123);
+
+
+    function GetFieldByName(field) {
+        return function (obj) {
+            return (obj && obj[field]);
+        }
+    };
+
+    $scope.mgetDesc = GetFieldByName('Description');
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

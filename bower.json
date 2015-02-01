@@ -17,6 +17,7 @@
     "bootstrap": "~3.3.2",
     "toastr": "~2.1.0",
     "ui-router": "~0.2.13",
-    "underscore": "~1.7.0"
+    "underscore": "~1.7.0",
+    "jslint": "~2013.11.23"
   }
 }
