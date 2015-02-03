@@ -9,7 +9,7 @@ angular.module('DNA',['ui.router'])
 
 function LoadDNAWData($http) {
 
-    var DNAWDATA = $http.get( 'DNAWdata.json').success(function(response)
+   $http.get( 'DNAWdata.json').success(function(response)
     {  return response}).error ( function(data) { });
 
 }
@@ -49,7 +49,14 @@ function wsCtrl($scope,$http,$stateParams) {
         };
     }
 
+    function NotmakeAdder(x) {
+        return x + 10;
+    }
+
     $scope.add10 =  makeAdder(10);
+
+    $scope.Notadd124 = NotmakeAdder(124);
+
     $scope.add123 =  $scope.add10(123);
 
 
