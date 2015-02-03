@@ -25,11 +25,11 @@ function wsCtrl($scope,$http,$stateParams) {
     function onUserComplete(response) {
         $scope.items = response.data;
         $scope.getDesc =$scope.mgetDesc($scope.items);
-    };
+    }
 
-    function onError(reason) {
+    function onError() {
         $scope.error = "Can't load";
-    };
+    }
 
     findvalue = function(value) {
         return  value.ItemNumber === '2';
@@ -47,7 +47,7 @@ function wsCtrl($scope,$http,$stateParams) {
         return function(free) {
             return free + value;
         };
-    };
+    }
 
     $scope.add10 =  makeAdder(10);
     $scope.add123 =  $scope.add10(123);
@@ -57,10 +57,30 @@ function wsCtrl($scope,$http,$stateParams) {
         return function (obj) {
             return (obj && obj[field]);
         }
-    };
+    }
 
     $scope.mgetDesc = GetFieldByName('Description');
 
+/*
+
+  Functional Javascript Michael Fogus
+
+  closures -  returning a function you can you a closure to remember the parameter.
+
+
+  function makeAdder(x) {
+  return function(y) {
+    return x + y;
+    };
+   }
+
+   // makeAdder is returning a function
+   var add10 = makeAdder(10);
+
+   //  it will remember the 10
+   add10(100);
+
+*/
 
 
 
@@ -84,11 +104,11 @@ function mainCtrl($http) {
 
     function onUserComplete(response) {
         self.headers = response.data.DNAExamw;
-    };
+    }
 
-    function onError(reason) {
+    function onError() {
         this.error = "Can't load";
-    };
+    }
 
 
 }
