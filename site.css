@@ -16,3 +16,12 @@
 .label {
     color: #000000;
 }
+
+.labcase{
+    color: #4ea6bc;
+    font-size :14px;
+    font-weight: bold;
+    float : left;
+    width: 75px;
+    padding-left: 7px;
+}

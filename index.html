@@ -4,6 +4,12 @@
     <div class="list-group-item nav-divider" ng-repeat="item in items | filter: { WSID: ThisWorksheetID} ">
         {{item.LabCase}}     {{item.ItemNumber}}      {{item.Description}}
     </div>
+
+    <ul>
+        <li class="row list-inline" ng-repeat="item in items | filter: { WSID: ThisWorksheetID} " >
+          <span class="labcase" >{{item.LabCase}}</span>       {{item.ItemNumber}}      {{item.Description}}
+        </li>
+    </ul>
      {{add10(15)}}   {{add123}} {{ThisWorksheetID}}
     <br/>
     {{mgetDesc}}
